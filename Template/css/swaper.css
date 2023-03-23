@@ -1,0 +1,81 @@
+
+  
+  .slider {
+    width: 100%;
+    height: 650px;
+    position: relative;
+     overflow: hidden; 
+  }
+  
+  .slide {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    /*transition: all 0.1s;*/
+  }
+  .slide a{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: red;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .continent{
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    z-index: 4;
+    top: 45%;
+    left:11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .continent samp,.continent .title{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000;
+    font-family: cursive;
+    text-align: center;
+    
+}
+.continent samp{
+  margin-top: 25px;
+  font-size: 25px;
+}
+  .btn {position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 62px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #fff;
+    cursor: default;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }

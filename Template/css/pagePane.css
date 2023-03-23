@@ -1,0 +1,106 @@
+
+
+section{
+    width: 98.645vw;
+    height: 800px;
+    background-color:#df7904;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 65%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+samp{
+    font-size: 230%;
+    font-weight: 600;
+
+}
+.header {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info {
+    width: 45%;
+    aspect-ratio: 2;
+    padding-top: 2%;
+}
+.info div,.end div  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 125%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+label {
+    margin: 2% 0% 2% 0%;
+}
+
+.info input,.info select {
+    width: 96%;
+    aspect-ratio: 12.5;
+    
+    padding-left: 3%;
+    border: none;
+    border:1.5px  rgb(117, 117, 117, 0.6) solid;
+}
+.info span:nth-child(4){
+    width: 25%;
+    aspect-ratio: 3.5/1;
+    border:1.5px  rgb(117, 117, 117, 0.6) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info select{
+    width: 100%;
+}
+.end{
+    margin-top: 2%;
+    width: 100%;
+}
+.end{
+    display: flex;
+    justify-content: space-evenly;
+}
+.end input{
+    width: 100%;
+    margin-top: 3%;
+    aspect-ratio: 4/1;
+    border: none;
+    border:1.5px  rgb(117, 117, 117, 0.6) solid;
+}
+
+button{
+    margin: 2.5% 0% 2.5% 0;
+    width: 75%;
+    height: 7%;
+    border: none;
+    border: 2px #000 solid;
+    border-color: rgb(119, 118, 118) rgb(106 ,65, 14) rgb(106 ,65, 14) rgb(119, 118, 118) ;
+    
+    
+    background-color: #df7904;
+
+    color: #fff;
+}
+button:hover{
+    background-color: #f58c14;
+
+}
+button:active{
+    border-color: rgb(106 ,65, 14) rgb(119, 118, 118) rgb(119, 118, 118) rgb(106 ,65, 14);
+}

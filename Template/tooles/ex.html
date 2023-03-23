@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  width: 100vw;
+  height: 400px;
+  background-color: red;
+  
+  animation-name: animate  ;
+  
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+.left{
+position: absolute;
+
+
+animation-name: animate2  ;
+animation-duration: 3s;
+animation-timing-function: linear;
+}
+@keyframes animate {
+  0% {
+    background: red;
+    transform: translateX(100%);
+  }
+  100% {
+    visibility: visible;
+    background: blue;
+    transform: translateX(0%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    display: none;
+    color: white;
+    transform: translateX(0%);
+  }
+  20% {
+    display: none;
+    color: white;
+    transform: translateX(-150%);
+  }
+  60% {
+    display: none;
+    color: white;
+    transform: translateX(-500%);
+  }
+  100% {
+    color: rgb(12, 12, 12);
+    transform: translateX(0%);
+ 
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="right">
+    
+</div >
+<div class="left">
+   <h3>Dropdown Menu inside a Navigation Bar</h3>
+   <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+</div>
+</body>
+<script>
+let left = document.querySelector(".left");
+let right = document.querySelector(".right");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop <= 0 || document.documentElement.scrollTop <= 0) {
+    left.style.transform = 'translateX(0%)';
+     setTimeout(4);
+    right.style.transform = 'translateX(0%)';
+  }
+  if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+
+  }
+}
+</script>
+</html>
