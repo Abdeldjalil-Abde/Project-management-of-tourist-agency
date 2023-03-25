@@ -6,29 +6,70 @@
 
 header {
   width: 100%;
+  
+}
+header > ul .logo{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > ul .logo .text {
+flex-direction: column;
+  
+}
+header > ul .logo .text div samp{
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+header > ul .logo .text div samp:nth-child(1){
+  
+  color: rgb(63 124 52);
+
+}
+header > ul .logo div samp:nth-child(2){
+  color: #00e7ff; 
+}
+header > ul .logo .text p{
+  font-size: 17px;
+  color : rgb(63 124 52);
+  font-family: 'Times New Roman', Times, serif;
+}
+header > ul .logo img{
+
+  height: 75px;
+  
 }
 
 header > ul {
   width: 100%;
-  height: 46px;
+  height: 77px;
   position: absolute;
+  top : 0%;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   background-color: #33333385;
-  z-index: 2;
+  z-index: 4;
 }
 
 header>ul li {
   float: right;
+  height: 100%;
 }
 
 header>ul li a{
+  height: 80%;
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header>ul li a.active{
+  border: 2px solid;
+  border-color: transparent transparent rgb(0, 0, 0);
 }
 
 header>ul li a:hover {

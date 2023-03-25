@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AGENCE SALEMI</title>
+    <link
+            rel="shortcut icon"
+            type="image/png"
+            href="/Template/Image/Logo.png"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styleHeader.css">
     <link rel="stylesheet" href="../css/StyleFootesr.css">
+    <link rel="stylesheet" href="../css/pagePane.css">
     <link rel="stylesheet" href="../css/BilletsAvion.css">
 
 
@@ -26,12 +32,64 @@
             </li>
             <li><a href="/Template/tooles/Visa.html">Visa</a></li>
             <li><a href="/Template/tooles/Hotel.html">Hôtel</a></li>
-            <li><a href="">Billets d'avion</a></li>
+            <li><a href="" class="active">Billets d'avion</a></li>
             <li><a href="/Template/tooles/about.html">Qui sommes-nous ?</a></li>
-            <div class = "logo"></div>
+            <div class = "logo"><img src="/Template/Image/Logo.png" alt="">
+                <div class="text">
+                    <div><samp>AGENCE</samp><samp> SALMI</samp></div>
+                    <p>Agence de tourisme de salmi</p>
+                </div>
+            </div>
         </ul>
     </header>
-    <section></section>
+    
+    <div class="information-form">
+        <form>
+            <h1>Reserve  de Billets d'avion </h1>
+            <div class="GlobalContent">
+                    <div class="content">
+                        <div class="input-field">
+                            <input type="text" placeholder="Nom"  required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Prénom"  required>
+                        </div>
+                        <div class="input-field">
+                            <p>Date de naissance</p>
+                            <input type="date"  required>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" placeholder="numéro national d'identité"  required>
+                        </div>
+                        <div class="input-field">
+                            <p>La date d'émission de la carte</p>
+                            <input type="date"   required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Adresse d'émission de la carte"  required>
+                        </div>
+                    </div>
+                <div class="content">
+                    <div class="input-field">
+                        <input type="email" placeholder="Email"  required>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" placeholder="Numéro de téléphone"  required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="destination"  required>
+                    </div>
+                    <div class="input-field">
+                        <p>La date de début du voyage</p>
+                        <input type="date"   required>
+                    </div>
+                </div>
+            </div>
+            <div class="action">
+                <button>Reserve</button>
+            </div>
+        </form>
+    </div>
     <footer>
         <div class="links">
             <div class="links-container">
